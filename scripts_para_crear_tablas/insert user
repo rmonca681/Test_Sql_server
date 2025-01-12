@@ -1,0 +1,12 @@
+INSERT INTO [dbo].[User]
+           ([user_username]
+           ,[user_password]
+           ,[user_email]
+           ,[user_phone]
+           ,[user_is_admin]
+           ,[user_is_active])
+VALUES
+    -- Admin users
+    ('admin.system', 'hashed_password_here', 'admin@company.com', '+1234567890', 1, 1),
+    ('admin.support', 'hashed_password_here', 'support.admin@company.com', '+1234567891', 1, 1);
+   
