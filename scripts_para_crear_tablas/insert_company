@@ -1,0 +1,37 @@
+USE [test]
+GO
+
+INSERT INTO [dbo].[Company]
+           ([compa_name]
+           ,[compa_tradename]
+           ,[compa_doctype]
+           ,[compa_docnum]
+           ,[compa_address]
+           ,[compa_city]
+           ,[compa_state]
+           ,[compa_country]
+           ,[compa_industry]
+           ,[compa_phone]
+           ,[compa_email]
+           ,[compa_website]
+           ,[compa_logo]
+           ,[compa_active])
+     VALUES
+           ('Company1'
+           ,'Company1'--<compa_tradename, nvarchar(255),>
+           ,'CC'--<compa_doctype, nvarchar(2),>
+           ,'1234567890'--<compa_docnum, nvarchar(255),>
+           ,'CALE 123'--<compa_address, nvarchar(255),>
+           ,'BOGOTA'--<compa_city, nvarchar(255),>
+           ,'BOGOTA'--<compa_state, nvarchar(255),>
+           ,'COLOMBIA'--<compa_country, nvarchar(255),>
+           ,'N/A'--<compa_industry, nvarchar(255),>
+           ,'123456789'--<compa_phone, nvarchar(255),>
+           ,'COMPANY1@MAIL.COM'--<compa_email, nvarchar(255),>
+           ,'WWW.COMPANY1.COM'--<compa_website, nvarchar(255),>
+           ,''--<compa_logo, nvarchar(max),>
+           ,1--<compa_active, bit,>)
+		   )
+GO
+
+
