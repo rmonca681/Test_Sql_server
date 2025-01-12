@@ -1,0 +1,16 @@
+USE [test]
+GO
+
+INSERT INTO [dbo].[Role]
+           ([company_id]
+           ,[role_name]
+           ,[role_code]
+           ,[role_description]
+           ,[role_active])
+     VALUES
+           (1
+           ,'contabilidad'
+           ,'contabilidad'
+           ,'encargado contabilidad'
+           ,1)
+GO
